@@ -1,35 +1,104 @@
-<div class="converter-box">
-    <h3>Base Converter</h3>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Eichhorn - Portfolio</title>
+    <link rel="icon" href="pikmin.jpg" type="image/jpeg">
     
-    <div class="input-group">
-        <label for="inputNumber">Enter Number:</label>
-        <input type="text" id="inputNumber" placeholder="e.g., 255 or 11111111">
-    </div>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Simon Eichhorn</h1>
+            <p>Computer Science Student | Aspiring Developer</p>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <div class="select-group">
-        <label for="sourceBase">Source Base:</label>
-        <select id="sourceBase">
-            <option value="10">Decimal (Base 10)</option>
-            <option value="2">Binary (Base 2)</option>
-            <option value="8">Octal (Base 8)</option>
-            <option value="16">Hexadecimal (Base 16)</option>
-        </select>
-    </div>
+    <main>
+        <section id="about">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>Hello! I'm Simon, a passionate computer science student with a strong interest in web development, cyber security, and video game design. In my free time, I like to play video games, draw, and make video games.</p>
+                <a href="link-to-your-resume.pdf" class="btn" download>Download Resume</a>
+            </div>
+        </section>
 
-    <div class="select-group">
-        <label for="targetBase">Target Base:</label>
-        <select id="targetBase">
-            <option value="2">Binary (Base 2)</option>
-            <option value="10">Decimal (Base 10)</option>
-            <option value="8">Octal (Base 8)</option>
-            <option value="16">Hexadecimal (Base 16)</option>
-        </select>
-    </div>
+        <section id="projects">
+            <div class="container">
+                <h2>Projects</h2>
+                
+                <div class="project-card">
+                    <h3>Number Converter</h3>
+                    <p> Converts numbers into various formats</p>
+                    <a href="link-to-project-github" target="_blank" class="btn">GitHub Repo</a>
+                    <a href="#number-converter-demo" class="btn">Live Demo</a> 
+                </div>
+                
+                <div id="number-converter-demo" class="converter-box">
+                    <h3>Base Converter</h3>
+                    
+                    <div class="input-group">
+                        <label for="inputNumber">Enter Number:</label>
+                        <input type="text" id="inputNumber" placeholder="e.g., 255 or 11111111">
+                    </div>
 
-    <button id="convertBtn" class="btn">Convert</button>
+                    <div class="select-group">
+                        <label for="sourceBase">Source Base:</label>
+                        <select id="sourceBase">
+                            <option value="10">Decimal (Base 10)</option>
+                            <option value="2">Binary (Base 2)</option>
+                            <option value="8">Octal (Base 8)</option>
+                            <option value="16">Hexadecimal (Base 16)</option>
+                        </select>
+                    </div>
 
-    <div class="result-group">
-        <h4>Result:</h4>
-        <p id="outputResult">Conversion will appear here.</p>
-    </div>
-</div>
+                    <div class="select-group">
+                        <label for="targetBase">Target Base:</label>
+                        <select id="targetBase">
+                            <option value="2">Binary (Base 2)</option>
+                            <option value="10">Decimal (Base 10)</option>
+                            <option value="8">Octal (Base 8)</option>
+                            <option value="16">Hexadecimal (Base 16)</option>
+                        </select>
+                    </div>
+
+                    <button id="convertBtn" class="btn">Convert</button>
+
+                    <div class="result-group">
+                        <h4>Result:</h4>
+                        <p id="outputResult">Conversion will appear here.</p>
+                    </div>
+                </div>
+                </div> 
+        </section>
+        
+        <section id="contact">
+            <div class="container">
+                <h2>Contact</h2>
+                <p>Feel free to get in touch! You can find me on these platforms:</p>
+                <div class="social-links">
+                    <a href="https://github.com/Masterofnone745" target="_blank">GitHub</a>
+                    <a href="mailto:your.email@example.com">Email</a> 
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 simon. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
