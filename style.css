@@ -1,0 +1,41 @@
+.converter-box {
+    background: #f4f4f4;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.input-group, .select-group {
+    margin-bottom: 15px;
+}
+
+.input-group label, .select-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+#inputNumber, #sourceBase, #targetBase {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Important for padding/width calculation */
+}
+
+/* Style for the output section */
+.result-group {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px dashed #77aaff;
+    border-radius: 4px;
+    background-color: #eaf3ff;
+}
+
+#outputResult {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #0056b3;
+}
